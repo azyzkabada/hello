@@ -1,0 +1,21 @@
+{
+  "name": "crossplatform",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/mobile",
+      "apps/web",
+      "shared/*"
+    ]
+  },
+  "scripts": {
+    "start:mobile": "cd apps/mobile && npm start",
+    "start:web": "cd apps/web && npm run dev",
+    "build:mobile": "cd apps/mobile && npm run build",
+    "build:web": "cd apps/web && npm run build",
+    "lint:mobile": "cd apps/mobile && npm run lint",
+    "lint:web": "cd apps/web && npm run lint",
+    "test:mobile": "cd apps/mobile && npm test",
+    "test:web": "cd apps/web && npm test"
+  }
+}
