@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-expo-nextjs",
+  "private": true,
+  "workspaces": [
+    "apps/mobile",
+    "apps/web"
+  ],
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "dev:mobile": "npm run --workspace=apps/mobile start",
+    "dev:web": "npm run --workspace=apps/web dev",
+    "build:mobile": "npm run --workspace=apps/mobile build",
+    "build:web": "npm run --workspace=apps/web build",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  }
+}
